@@ -144,7 +144,7 @@ def load_data():
                     df.loc[index, "% NO"] = 0  # Si no hay "BUEN FICHAJE", se establece a 0
 
         # Conexión a MongoDB
-        url = "mongodb+srv://manexddd33:tLruTE93ekauYdKK@cluster0.6drbl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        url = "mongodb+srv://manexddd33:psw@cluster0.6drbl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
         client = MongoClient(url, server_api=ServerApi('1'))
 
         try:
@@ -191,7 +191,7 @@ def load_data():
         messagebox.showerror("Error", "El archivo seleccionado no es un archivo de Excel válido.")
 
 def load_mongo():
-    url = "mongodb+srv://manexddd33:tLruTE93ekauYdKK@cluster0.6drbl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    url = "mongodb+srv://manexddd33:psw@cluster0.6drbl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     client = MongoClient(url, server_api=ServerApi('1'))
     
     try:
@@ -250,7 +250,7 @@ def insert_row():
         messagebox.showerror("Error", "No se pueden agregar registros porque no hay datos Históricos.")
         return
 
-    url = "mongodb+srv://manexddd33:tLruTE93ekauYdKK@cluster0.6drbl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    url = "mongodb+srv://manexddd33:psw@cluster0.6drbl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     client = MongoClient(url, server_api=ServerApi('1'))
 
     # Obtener valores del formulario
